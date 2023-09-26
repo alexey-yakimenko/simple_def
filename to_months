@@ -7,4 +7,3 @@ def get_experience(arg):
         elif arg_list[i] == 'месяца' or arg_list[i] == 'месяцев' or arg_list[i] == 'месяц':
             count += int(arg_list[i-1])
     return count
-display(get_experience('Опыт работы 5 лет и 2 месяца'))
