@@ -11,6 +11,6 @@ def outliers_z_score_mod(data, feature, log_scale=False, left=3, right=3):
     cleaned = data[(x >= lower_bound) & (x <= upper_bound)]
     return outliers, cleaned
 
-outliers, cleaned = outliers_z_score_mod(diabetes, 'SkinThickness')
+outliers, cleaned = outliers_z_score_mod(data, 'feature')
 print(f'Число выбросов по методу z-отклонения: {outliers.shape[0]}')
 print(f'Результирующее число записей: {cleaned.shape[0]}')
